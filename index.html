@@ -6,194 +6,284 @@
     <title>Theater in School</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/assets/css/global.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+   
 </head>
 <body>
     <!-- Top Bar -->
-    <div class="bg-[#3498db] text-white py-2">
+    <div class="bg-secondary text-white py-2 hidden md:block">
         <div class="container mx-auto px-4 flex justify-end space-x-4">
-            <a href="#over" class="hover:text-gray-200">over</a>
-            <a href="#nieuws" class="hover:text-gray-200">nieuws</a>
-            <a href="#vacatures" class="hover:text-gray-200">vacatures</a>
-            <a href="#erfgoed" class="hover:text-gray-200">erfgoed</a>
-            <a href="#contact" class="hover:text-gray-200">contact</a>
+            <a href="#over" class="hover:text-gray-200 text-xl font-sans font-normal">over</a>
+            <a href="#nieuws" class="hover:text-gray-200 text-xl font-sans font-normal">nieuws</a>
+            <a href="#vacatures" class="hover:text-gray-200 text-xl font-sans font-normal">vacatures</a>
+            <a href="#erfgoed" class="hover:text-gray-200 text-xl font-sans font-normal">erfgoed</a>
+            <a href="#contact" class="hover:text-gray-200 text-xl font-sans font-normal">contact</a>
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-[#f1c40f] py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center space-x-8">
-                <h1 class="text-2xl font-bold">THEATER IN SCHOOL</h1>
-                <div class="space-x-4">
-                    <a href="#aanbod" class="hover:text-gray-700">Aanbod</a>
-                    <a href="#doelgroep" class="hover:text-gray-700">Doelgroep</a>
+    <nav class="bg-primary md:py-4 py-2">
+        <div class="container mx-auto px-4 flex item-center md:items-end w-full">
+            <div class="flex items-center">
+                <div class="relative">
+                    <h1 class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap font-inter">
+                        THEATER <br>IN SCHOOL
+                    </h1>
                 </div>
             </div>
-            <div class="relative">
-                <input
+            <div class="flex items-center justify-between w-full">
+                <div class="space-x-4">
+                    <a href="#aanbod" class="text-white text-xl md:text-xl font-bold font-sans">Aanbod</a>
+                    <a href="#doelgroep" class="text-white text-xl md:text-xl font-bold font-sans">Doelgroep</a>
+                </div>
+                <div class="relative hidden md:block">
+                    <input
                     type="text"
                     placeholder="Zoeken..."
-                    class="pl-3 pr-10 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-[#3498db]"
-                >
-                <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                    class="pl-3 pr-10 py-2 rounded-md  focus:outline-none focus:border-yellow-100 bg-yellow-100"
+                    >
+                    <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-primary w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <div id="mobile-menu" class="block md:hidden">
+                 <button class="bg-secondary text-white rounded-custom text-lg p-1 px-3 font-bold font-sans">Menu</button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8">
-        <div class="md:w-1/2">
-            <h1 class="text-3xl font-bold mb-4">Theater in School gelooft in kunst als educatief medium</h1>
-            <p class="text-gray-600 mb-6">
+    <section class="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+        <div class="md:w-1/2 order-2 md:order-1">
+            <h1 class="text-2xl md:text-4xl font-bold mb:4 md:mb-10 font-sans text-primaryBlack">Theater in School gelooft in kunst als educatief medium</h1>
+            <p class="text-gray-600 mb-8 md:mb-16 font-sans text-primaryBlack text:lg mb:text-xl">
                 Het is een middel om je te laten kijken vooruit dat wat je op het eerste nog niet succes de regels door leren en sprinteren. Leren door te ervaren en voelen.
             </p>
-            <button class="bg-[#3498db] text-white px-6 py-2 rounded hover:bg-[#2980b9]">
+            <button class="bg-secondary text-white px-8 py-2 rounded hover:bg-[#2980b9] rounded-custom font-bold text-xl">
                 Bekijk ons aanbod
             </button>
         </div>
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 order-1 md:order-2">
             <img 
-                src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&q=80"
+                src="/assets/images/home/theater.png"
                 alt="Theater performance"
-                class="w-full rounded-lg shadow-lg"
+                class="w-full rounded-lg shadow-lg md:h-[460px] h-auto"
             >
         </div>
     </section>
 
     <!-- Podium Arts Section -->
-    <section class="bg-gray-50 py-12">
+    <section class="pt-12">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-8">Onze podiumkunsten</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mb-2">
-                        <svg class="w-8 h-8 text-[#3498db]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <span class="text-sm font-medium">College</span>
+            <h2 class="text-2xl md:text-4xl font-bold mb-10 font-sans text-primaryBlack">Onze podiumkunsten</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">College</span>
                 </div>
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">Workshops</span>
+                </div>
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">Theater</span>
+                </div>
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">Muziek</span>
+                </div>
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">Film</span>
+                </div>
+                <div class="flex flex-col gap-5">
+                   <img 
+                                src="/assets/images/home/artIconBlack.png"
+                                alt="Theater performance"
+                                class="w-[103px] h-[79px]"
+                            >
+                            <span class="text-xl text-primaryBlack font-bold">Dans</span>
+                </div>
+             
                 <!-- Repeat for other arts -->
             </div>
         </div>
     </section>
 
     <!-- Team Member Section -->
-    <section class="bg-[#3498db] text-white py-12">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-            <div class="md:w-1/4">
-                <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80"
-                    alt="Femme"
-                    class="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
-                >
+    <section class="pt-12" >
+        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-blue text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-1/4 relative">
+                    <img
+                        src="/assets/images/home/team-1.png"
+                        alt="Femme"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute lg:left-8 -top-36 lg:-top-16"
+                    >
+                </div>
+                <div class="lg:w-3/4 lg:ml-16 mt-5">
+                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Femme en Theater in School</h2>
+                    <p class="text-md lg:text-xl font-normal">
+                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater toegankelijk en waardevol voor leerlingen.
+                    </p>
+                </div>
+             </div>
+        </div>
+        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-primary text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-3/4 lg:ml-16 ">
+                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Wij zoeken aansluiting op jouw programma</h2>
+                    <p class="text-md lg:text-xl font-normal">
+                        Maatwerk is soms nodig en altijd mogelijk. Op zoek naar iets specifieks of heb je liever telefonisch contact? Laat het ons weten, wij denken graag met je mee, of we komen kennismaken bij jou op school!
+                    </p>
+                </div>
+                <div class="md:w-1/4 relative">
+                    <img
+                        src="/assets/images/home/team-2.png"
+                        alt="Programma"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute right-0 lg:right-8 bottom-52 lg:-top-16"
+                    >
+                </div>
             </div>
+        </div>
+        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-pink text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-1/4 relative">
+                    <img
+                        src="/assets/images/home/team-2.png"
+                        alt="Femme"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute lg:left-8 -top-36 lg:-top-16"
+                    >
+                </div>
+                <div class="lg:w-3/4 lg:ml-16 mt-5">
+                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Je kan bij ons je cultuurbudget besteden</h2>
+                    <p class="text-md lg:text-xl font-normal">
+                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren 
+                        creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater 
+                        toegankelijk en waardevol voor leerlingen.
+                    </p>
+                </div>
+             </div>
+        </div>
+
+        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-sky text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-3/4 lg:ml-16 ">
+                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">En wij zijn cultuurkaartacceptant voor VO & MBO</h2>
+                    <p class="text-md lg:text-xl font-normal">
+                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren 
+                        creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater 
+                        toegankelijk en waardevol voor leerlingen.
+                    </p>
+                </div>
+                <div class="md:w-1/4 relative">
+                    <img
+                        src="/assets/images/home/team-2.png"
+                        alt="Programma"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute right-0 lg:right-8 bottom-52 lg:-top-16"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Info section -->
+
+    <section class="py-12">
+        <div class="container mx-auto px-4 ">
             <div class="md:w-3/4">
-                <h2 class="text-2xl font-bold mb-4">Femme en Theater in School</h2>
-                <p class="text-lg">
-                    Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater toegankelijk en waardevol voor leerlingen.
+                <h1 class="text-2xl md:text-4xl font-bold mb-6 text-textgray">Breng Improvisatietheater Naar Uw School!</h1>
+                <p class="text-xl mb-4 text-textgray">
+                    Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater? Boek nu een improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.
+                </p>
+                <p class="text-xl mb-4 text-textgray">
+                    Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze workshops, gericht op zowel beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken, out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende omgeving.
+                </p>
+                <p class="text-xl mb-4 text-textgray">
+                    Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een speciaal 'train-de-trainer' pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!
+                </p>
+                <p class="text-xl mb-4 text-textgray">
+                    Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren en boek onze voorstelling, inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw school wordt een bron van inspiratie voor iedereen.
+                </p>
+                <p class="text-xl text-textgray">
+                    Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!
                 </p>
             </div>
         </div>
     </section>
-
-    <!-- Info Cards -->
-    <div class="container mx-auto px-4 py-12 space-y-8">
-        <!-- Yellow Card -->
-        <div class="bg-[#f1c40f] rounded-lg overflow-hidden shadow-lg">
-            <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-3/4">
-                    <h2 class="text-2xl font-bold mb-4">Wij zoeken aansluiting op jouw programma</h2>
-                    <p class="text-lg">
-                        Voorafgaand aan onze komst op jouw school, kijken we naar wat jouw school wil leren. Wij stemmen af op jouw wensen, wij denken graag mee en zorgen voor een mooie kennismaking met het podium!
-                    </p>
-                </div>
-                <div class="md:w-1/4">
-                    <img
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                        alt="Program"
-                        class="w-full rounded-lg shadow-md"
-                    >
-                </div>
-            </div>
-        </div>
-
-        <!-- Red Card -->
-        <div class="bg-[#e74c3c] rounded-lg overflow-hidden shadow-lg text-white">
-            <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-3/4">
-                    <h2 class="text-2xl font-bold mb-4">Je kan bij ons je cultuurbudget besteden</h2>
-                    <p class="text-lg">
-                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren creativiteit met educatieve voorstellingen op maat voor elke school.
-                    </p>
-                </div>
-                <div class="md:w-1/4">
-                    <img
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                        alt="Budget"
-                        class="w-full rounded-lg shadow-md"
-                    >
-                </div>
-            </div>
-        </div>
-
-        <!-- Green Card -->
-        <div class="bg-[#1abc9c] rounded-lg overflow-hidden shadow-lg text-white">
-            <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-3/4">
-                    <h2 class="text-2xl font-bold mb-4">En wij zijn cultuurkaartacceptant voor VO & MBO</h2>
-                    <p class="text-lg">
-                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren creativiteit met educatieve voorstellingen op maat voor elke school.
-                    </p>
-                </div>
-                <div class="md:w-1/4">
-                    <img
-                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
-                        alt="Culture card"
-                        class="w-full rounded-lg shadow-md"
-                    >
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Newsletter Section -->
-    <section class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold mb-4">
+    <section class="bg-bluegray py-12">
+        <div class="container mx-auto px-7">
+            <h2 class="text-4xl text-primaryBlack font-bold mb-7">
                 Altijd op de hoogte van het laatste Theater in School nieuws
             </h2>
-            <p class="text-gray-600 mb-6">
-                Ontvangen leven nieuwd over nieuwheld met delen van nieuwd nieuws
-            </p>
-            <div class="flex gap-4">
-                <input
-                    type="email"
-                    placeholder="E-mailadres"
-                    class="flex-1 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-[#3498db]"
-                >
-                <button class="bg-[#3498db] text-white px-6 py-2 rounded hover:bg-[#2980b9]">
-                    Inschrijven
-                </button>
+            <div class="lg:w-1/3">
+                <p class="text-gray-600 mb-8 text-xl text-primaryBlack">
+                    Ontvangen iedere maand onze nieuwsbrief met daarin een 
+                    heleboel nieuws
+                </p>
+                <div class="flex">
+                    <input
+                        type="email"
+                        placeholder="E-mailadres"
+                        class="flex-1 px-4 py-2  focus:outline-none focus:border-secondary"
+                    >
+                    <button class="bg-secondary text-white px-6 py-2 rounded-r-sm hover:bg-[#2980b9]">
+                        Inschrijven
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#3498db] text-white py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer class="bg-blue text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-                <h3 class="text-xl font-bold mb-4">THEATER IN SCHOOL</h3>
-                <p class="text-sm">
-                    Theater in School gelooft in kunst als educatief medium
-                </p>
+                <div class="relative">
+                    <h1 class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap font-inter">
+                        THEATER <br>IN SCHOOL
+                    </h1>
+                </div >
+                <div class="md:w-36  pt-7">
+                    <p class="text-lg font-sans">
+                        Theater in School gelooft in kunst als educatief medium
+                    </p>
+                </div>
+                <div class="flex gap-8 pt-7">
+                    <img src="/assets/images/home/facebook.png" alt="facebook">
+                    <img src="/assets/images/home/twitter.png" alt="twitter">
+                    <img src="/assets/images/home/skype.png" alt="skype">
+                </div>
             </div>
             
             <div>
-                <h4 class="font-bold mb-4">Podiumkunsten</h4>
-                <ul class="space-y-2">
+                <h4 class="font-bold mb-8 text-xl font-sans">Podiumkunsten</h4>
+                <ul class="font-sans">
                     <li>Theater</li>
                     <li>College</li>
                     <li>Workshops</li>
@@ -204,11 +294,14 @@
             </div>
 
             <div>
-                <h4 class="font-bold mb-4">Misschien interessant</h4>
-                <ul class="space-y-2">
+                <h4 class="font-bold mb-8 text-xl font-sans">Misschien interessant</h4>
+                <ul class="font-sans">
                     <li>Over ons</li>
-                    <li>Medewerker worden</li>
-                    <li>Dit moet je weten</li>
+                    <li>Donateur worden</li>
+                    <li>Nieuws</li>
+                </ul>
+                <h4 class="font-bold mb-8 text-xl font-sans mt-8">Dit moet</h4>
+                <ul class="font-sans">
                     <li>Cookieverklaring</li>
                     <li>Privacy statement</li>
                     <li>Algemene voorwaarden</li>
@@ -216,17 +309,18 @@
             </div>
 
             <div>
-                <h4 class="font-bold mb-4">Hier werken we</h4>
+                <h4 class="font-bold mb-8 text-xl font-sans">Hier werken we</h4>
                 <address class="not-italic">
                     <p>Hendrik Figeeweg 3G</p>
                     <p>2031 BJ</p>
                     <p>Haarlem</p>
-                    <p class="mt-4">Tel: 0237114476</p>
+                    <p class="mt-8 ">Tel: 0237114476</p>
+                    <p class="mt-12">© THEATER IN SCHOOL 2018</p>
                 </address>
             </div>
         </div>
 
-        <div class="container mx-auto px-4 mt-8 pt-8 border-t border-white/20">
+        <!-- <div class="container mx-auto px-4 mt-8 pt-8 border-t border-white/20">
             <div class="flex justify-between items-center">
                 <p>&copy; THEATER IN SCHOOL 2023</p>
                 <div class="flex space-x-4">
@@ -242,9 +336,10 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </div> -->
     </footer>
 
     <script src="/assets/js/main.js"></script>
+     <script src="/tailwind.config.js"></script>
 </body>
 </html>

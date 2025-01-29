@@ -1,8 +1,25 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+tailwind.config = {
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#f1c40f',    // Yellow
+        secondary: '#3498db',  // Blue
+        'yellow-100': '#FFEDC1',
+        primaryBlack: "#3A3A3A",
+        pink: "#EA5052",
+        sky: "#32B2BD",
+        blue: "#3380C2",
+        textgray: "#474143",
+        bluegray: "#3380C21A"
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        sans: ['PT Sans', 'sans-serif']
+      },
+      borderRadius: {
+        'custom': '10px',
+      },
+    },
   },
   plugins: [],
-};
+}
