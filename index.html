@@ -21,6 +21,23 @@
         </div>
     </div>
 
+ <!-- Mobile Sidebar -->
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full bg-white hidden transition-opacity duration-300 z-50 shadow-lg ">
+        <div class="p-6">
+            <button id="close-menu" class="text-secondary text-xl font-bold float-right">✕</button>
+            <ul class="mt-10 space-y-4">
+                <li><a href="#home" class="font-bold text-primaryBlack font-sans text-lg">Home</a></li>
+                <li><a href="#doelgroep" class="font-bold text-primaryBlack font-sans text-lg">Doelgroep</a></li>
+                <li><a href="#aanbod" class="font-bold text-primaryBlack font-sans text-lg">Aanbod</a></li>
+                <li><a href="#over" class="text-primaryBlack font-sans mt-4">Over</a></li>
+                <li><a href="#nieuws" class="text-primaryBlack font-sans">Nieuws</a></li>
+                <li><a href="#vacatures" class="text-primaryBlack font-sans">Vacatures</a></li>
+                <li><a href="#erfgoed" class="text-primaryBlack font-sans">Erfgoed</a></li>
+                <li><a href="#contact" class="text-primaryBlack font-sans">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="bg-primary md:py-4 py-2">
         <div class="container mx-auto px-4 flex item-center md:items-end w-full">
@@ -46,21 +63,24 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <div id="mobile-menu" class="block md:hidden">
-                 <button class="bg-secondary text-white rounded-custom text-lg p-1 px-3 font-bold font-sans">Menu</button>
+                <div  class="block md:hidden">
+                 <button  id="menu-toggle"  class="bg-secondary text-white rounded-custom text-lg p-1 px-3 font-bold font-sans">Menu</button>
                 </div>
             </div>
         </div>
     </nav>
 
+  
+
+
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-8">
+    <section class="container mx-auto px-4 py-4 lg:py-8 flex flex-col md:flex-row gap-8">
         <div class="md:w-1/2 order-2 md:order-1">
-            <h1 class="text-2xl md:text-4xl font-bold mb:4 md:mb-10 font-sans text-primaryBlack">Theater in School gelooft in kunst als educatief medium</h1>
-            <p class="text-gray-600 mb-8 md:mb-16 font-sans text-primaryBlack text:lg mb:text-xl">
+            <h1 class="text-2xl lg:text-4xl font-bold mb:4 lg:mb-10 font-sans text-primaryBlack">Theater in School gelooft in kunst als educatief medium</h1>
+            <p class="text-gray-600 mb-8 lg:mb-16 font-sans text-primaryBlack text:lg lg:text-xl">
                 Het is een middel om je te laten kijken vooruit dat wat je op het eerste nog niet succes de regels door leren en sprinteren. Leren door te ervaren en voelen.
             </p>
-            <button class="bg-secondary text-white px-8 py-2 rounded hover:bg-[#2980b9] rounded-custom font-bold text-xl">
+            <button class="bg-secondary text-white px-8 py-2 rounded hover:bg-[#2980b9] rounded-custom font-bold text-lg lg:text-xl">
                 Bekijk ons aanbod
             </button>
         </div>
@@ -68,13 +88,13 @@
             <img 
                 src="/assets/images/home/theater.png"
                 alt="Theater performance"
-                class="w-full rounded-lg shadow-lg md:h-[460px] h-auto"
+                class="w-full rounded-lg shadow-lg lg:h-[460px] h-auto"
             >
         </div>
     </section>
 
     <!-- Podium Arts Section -->
-    <section class="pt-12">
+    <section class="py-4">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-4xl font-bold mb-10 font-sans text-primaryBlack">Onze podiumkunsten</h2>
             <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-8">
@@ -133,17 +153,17 @@
     </section>
 
     <!-- Team Member Section -->
-    <section class="pt-12" >
-        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
-            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-blue text-white rounded-custom  lg:h-[266px]">
+    <section class="py-8" >
+        <div class="pb-20 lg:pt-0 pt-20 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:px-16  relative lg:flex items-center gap-8 bg-blue text-white rounded-custom  lg:h-[266px]">
                 <div class="lg:w-1/4 relative">
                     <img
                         src="/assets/images/home/team-1.png"
                         alt="Femme"
-                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute lg:left-8 -top-36 lg:-top-16"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover xl:mt-40 -mt-36"
                     >
                 </div>
-                <div class="lg:w-3/4 lg:ml-16 mt-5">
+                <div class="lg:w-3/4  mt-5">
                     <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Femme en Theater in School</h2>
                     <p class="text-md lg:text-xl font-normal">
                         Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater toegankelijk en waardevol voor leerlingen.
@@ -151,33 +171,35 @@
                 </div>
              </div>
         </div>
-        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
-            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-primary text-white rounded-custom  lg:h-[266px]">
-                <div class="lg:w-3/4 lg:ml-16 ">
-                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Wij zoeken aansluiting op jouw programma</h2>
-                    <p class="text-md lg:text-xl font-normal">
-                        Maatwerk is soms nodig en altijd mogelijk. Op zoek naar iets specifieks of heb je liever telefonisch contact? Laat het ons weten, wij denken graag met je mee, of we komen kennismaken bij jou op school!
-                    </p>
-                </div>
-                <div class="md:w-1/4 relative">
+
+        <div class="pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:px-16  relative lg:flex items-center gap-8 bg-primary text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-1/4 relative order-2">
                     <img
                         src="/assets/images/home/team-2.png"
-                        alt="Programma"
-                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute right-0 lg:right-8 bottom-52 lg:-top-16"
+                        alt="Femme"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover xl:mt-40 -mt-36 ml-auto"
                     >
                 </div>
-            </div>
+                <div class="lg:w-3/4  mt-5 order-1">
+                    <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Wij zoeken aansluiting op jouw programma</h2>
+                    <p class="text-md lg:text-xl font-normal">
+                         Maatwerk is soms nodig en altijd mogelijk. Op zoek naar iets specifieks of heb je liever telefonisch contact? Laat het ons weten, wij denken graag met je mee, of we komen kennismaken bij jou op school!
+                    </p>
+                </div>
+             </div>
         </div>
-        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
-            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-pink text-white rounded-custom  lg:h-[266px]">
+
+           <div class="pb-20 py-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:px-16  relative lg:flex items-center gap-8 bg-pink text-white rounded-custom  lg:h-[266px]">
                 <div class="lg:w-1/4 relative">
                     <img
                         src="/assets/images/home/team-2.png"
                         alt="Femme"
-                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute lg:left-8 -top-36 lg:-top-16"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover xl:mt-40 -mt-36"
                     >
                 </div>
-                <div class="lg:w-3/4 lg:ml-16 mt-5">
+                <div class="lg:w-3/4  mt-5">
                     <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">Je kan bij ons je cultuurbudget besteden</h2>
                     <p class="text-md lg:text-xl font-normal">
                         Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren 
@@ -186,48 +208,49 @@
                     </p>
                 </div>
              </div>
-        </div>
-
-        <div class="lg:pb-24 pb-20 py-12 container mx-auto  px-4">
-            <div class="lg:py-5 py-12 px-4 lg:pr-10  relative lg:flex items-center gap-8 bg-sky text-white rounded-custom  lg:h-[266px]">
-                <div class="lg:w-3/4 lg:ml-16 ">
+           </div>
+       
+       <div class="lg:py-12 pt-12 container mx-auto  px-4">
+            <div class="lg:py-5 py-12 px-4 lg:px-16  relative lg:flex items-center gap-8 bg-sky text-white rounded-custom  lg:h-[266px]">
+                <div class="lg:w-1/4 relative order-2">
+                    <img
+                        src="/assets/images/home/team-2.png"
+                        alt="Femme"
+                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover xl:mt-40 -mt-36 ml-auto"
+                    >
+                </div>
+                <div class="lg:w-3/4  mt-5 order-1">
                     <h2 class="text-2xl lg:text-4xl font-bold lg:mb-7 mb-4">En wij zijn cultuurkaartacceptant voor VO & MBO</h2>
                     <p class="text-md lg:text-xl font-normal">
-                        Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren 
+                       Ons team brengt de magie van theater naar het klaslokaal! Wij inspireren, verbinden en stimuleren 
                         creativiteit met educatieve voorstellingen op maat voor elke school. Samen maken we theater 
                         toegankelijk en waardevol voor leerlingen.
                     </p>
                 </div>
-                <div class="md:w-1/4 relative">
-                    <img
-                        src="/assets/images/home/team-2.png"
-                        alt="Programma"
-                        class="w-[150px] height=[150ox] lg:w-auto lg:h-auto object-cover absolute right-0 lg:right-8 bottom-52 lg:-top-16"
-                    >
-                </div>
-            </div>
+             </div>
         </div>
+       
     </section>
    
     <!-- Info section -->
 
-    <section class="py-12">
+    <section class="lg:py-12 py-4">
         <div class="container mx-auto px-4 ">
-            <div class="md:w-3/4">
+            <div class="lg:w-3/4">
                 <h1 class="text-2xl md:text-4xl font-bold mb-6 text-textgray">Breng Improvisatietheater Naar Uw School!</h1>
-                <p class="text-xl mb-4 text-textgray">
+                <p class="lg:text-xl text-lg mb-4 text-textgray">
                     Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater? Boek nu een improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.
                 </p>
-                <p class="text-xl mb-4 text-textgray">
+                <p class="lg:text-xl text-lg mb-4 text-textgray">
                     Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze workshops, gericht op zowel beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken, out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende omgeving.
                 </p>
-                <p class="text-xl mb-4 text-textgray">
+                <p class="lg:text-xl text-lg mb-4 text-textgray">
                     Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een speciaal 'train-de-trainer' pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!
                 </p>
-                <p class="text-xl mb-4 text-textgray">
+                <p class="lg:text-xl text-lg mb-4 text-textgray">
                     Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren en boek onze voorstelling, inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw school wordt een bron van inspiratie voor iedereen.
                 </p>
-                <p class="text-xl text-textgray">
+                <p class="lg:text-xl text-lg text-textgray">
                     Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!
                 </p>
             </div>
@@ -237,7 +260,7 @@
 
     <!-- Newsletter Section -->
     <section class="bg-bluegray py-12">
-        <div class="container mx-auto px-7">
+        <div class="container mx-auto md:px-7 px-4">
             <h2 class="text-4xl text-primaryBlack font-bold mb-7">
                 Altijd op de hoogte van het laatste Theater in School nieuws
             </h2>
@@ -252,7 +275,7 @@
                         placeholder="E-mailadres"
                         class="flex-1 px-4 py-2  focus:outline-none focus:border-secondary"
                     >
-                    <button class="bg-secondary text-white px-6 py-2 rounded-r-sm hover:bg-[#2980b9]">
+                    <button class="bg-secondary text-white px-4 md:px-6 py-2 rounded-r-sm hover:bg-[#2980b9]">
                         Inschrijven
                     </button>
                 </div>

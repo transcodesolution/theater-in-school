@@ -37,7 +37,34 @@ if (subscribeButton) {
     });
 }
 
-document.getElementById('menu-toggle').addEventListener('click', function () {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const closeMenu = document.getElementById("close-menu");
+
+    function openMenu() {
+        mobileMenu.classList.remove("hidden");
+    }
+
+    function closeMenuFn() {
+        mobileMenu.classList.add("hidden");
+    }
+
+    menuToggle.addEventListener("click", openMenu);
+    closeMenu.addEventListener("click", closeMenuFn);
+
+})
+
+
+
+// Open Sidebar and add 'sidebar-open' class when filterButton is clicked
+document.getElementById('filterButton').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.add('sidebar-open');
+    document.getElementById('sidebar').classList.remove('hidden');
+});
+
+// Close Sidebar and remove 'sidebar-open' class when closeSidebar is clicked
+document.getElementById('closeSidebar').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.remove('sidebar-open');
+    document.getElementById('sidebar').classList.add('hidden');
 });
