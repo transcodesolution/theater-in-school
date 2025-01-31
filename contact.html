@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nieuws-verdieping</title>
+  <title>contact</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
@@ -46,16 +46,76 @@
       <div class="flex items-center">
         <div class="relative">
           <h1
-            class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap font-inter">
+            class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
             THEATER <br>IN SCHOOL
           </h1>
         </div>
       </div>
       <div class="flex items-center justify-between w-full">
-        <div class="space-x-4">
-          <a href="#aanbod" class="text-white text-xl md:text-xl font-bold font-sans">Aanbod</a>
-          <a href="#doelgroep" class="text-white text-xl md:text-xl font-bold font-sans">Doelgroep</a>
-        </div>
+           <div class="md:space-x-4 flex">
+              <div class="relative">
+                  <button id="aanbodToggle" class="text-white text-xl font-bold md:px-4 px-2 py-2 transition">
+                      Aanbod
+                  </button>
+
+                  <!-- Aanbod Dropdown Menu -->
+                  <div id="aanbodMenu" class="absolute left-0 w-max bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden p-4">
+                      <a href="#theater" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                              <img src="/assets/images/icons/theater.png" alt="icon"> 
+                          </div>
+                          Theater
+                      </a>
+                      <a href="#gastles" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                              <img src="/assets/images/icons/lecture.png" alt="icon">
+                          </div>
+                          Gastles
+                      </a>
+                      <a href="#workshops" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                            <img src="/assets/images/icons/workshop.png" alt="icon"> 
+                          </div>
+                          Workshops
+                      </a>
+                      <a href="#muziek" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                              <img src="/assets/images/icons/music.png" alt="icon">
+                          </div>
+                            Muziek
+                      </a>
+                      <a href="#film" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                              <img src="/assets/images/icons/film.png" alt="icon">
+                          </div>
+                          Film & Online
+                      </a>
+                      <a href="#dans" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                          <div class="w-[35px]">
+                              <img src="/assets/images/icons/dance.png" alt="icon">
+                          </div>
+                            Dans
+                      </a>
+                  </div>
+              </div>
+
+              <!-- Doelgroep Dropdown -->
+              <div class="relative">
+                  <button id="doelgroepToggle" class="text-white text-xl font-bold md:px-4 px-2 py-2 transition">
+                      Doelgroep
+                  </button>
+
+                  <!-- Doelgroep Dropdown Menu -->
+                  <div id="doelgroepMenu" class="absolute left-0 md:w-56 w-48  p-4 bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden">
+                      <a href="#po" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Po</a>
+                      <a href="#vo" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Vo</a>
+                      <a href="#mbo" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Mbo</a>
+                      <a href="#tto" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Tto</a>
+                      <a href="#ouders" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Ouders</a>
+                      <a href="#docenten" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Docenten</a>
+                  </div>
+              </div>
+          </div>
         <div class="relative hidden md:block">
           <input type="text" placeholder="Zoeken..."
             class="pl-3 pr-10 py-2 rounded-md  focus:outline-none focus:border-yellow-100 bg-yellow-100">
@@ -86,80 +146,84 @@
   </section>
 
   <section class="container mx-auto px-4 py-4">
-    <div class="flex gap-4">
-      <div>
-        <h1 class="text-4xl font-bold mb-2">Contact</h1>
-        <p class="text-textgray"> Theater in School </p>
-        <p class="text-textgray"> Van Ostadestraat 1-3 zwart</p>
-        <p class="text-textgray"> 2023 XA Haarlem </p>
-        <p class="text-textgray"> Tel: 023-5316222 </p>
-        <p class="text-textgray"> Fax: 023-5514109 </p>
-        <br>
-        <p class="text-textgray"> Per Mail </p>
-        <p class="text-textgray"> Algemeen: </p>
-        <a href="mailto:info@theaterinschool.nl" class="underline text-secondary">info@theaterinschool.nl</a>
-        <button
-          class="px-3 my-4 py-1 bg-secondary text-white rounded-custom text-lg font-bold m-auto block w-full">Optie
-          Route (Google maps)</button>
+    <div class="flex flex-row md:flex-nowrap flex-wrap gap-4 md:gap-10">
+        <div class="flex-1 ">
+          <h1 class="text-2xl lg:text-4xl font-bold mb-2 text-primaryBlack">Contact</h1>
+          <p class="text-primaryBlack text-md"> Theater in School </p>
+          <p class="text-primaryBlack text-md"> Van Ostadestraat 1-3 zwart</p>
+          <p class="text-primaryBlack text-md"> 2023 XA Haarlem </p>
+          <p class="text-primaryBlack text-md"> Tel: 023-5316222 </p>
+          <p class="text-primaryBlack text-md"> Fax: 023-5514109 </p>
+          <br>
+          <p class="text-primaryBlack text-md"> Per Mail </p>
+          <p class="text-primaryBlack text-md"> Algemeen: </p>
+          <a href="mailto:info@theaterinschool.nl" class="underline text-secondary">info@theaterinschool.nl</a>
+          <button
+            class="px-3 my-4 py-1 bg-secondary text-white rounded-custom text-lg font-bold m-auto block w-full">Route (Google Mpas)</button>
 
-        <div class="flex flex-col gap-4">
-          <div>
-            <p class="text-textgray">Femme Hammer:</p>
-            <a href="mailto:Femme@theaterinschool.nl" class="underline text-secondary">Femme@theaterinschool.nl</a>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-primaryBlack text-md">Femme Hammer:</p>
+              <a href="mailto:Femme@theaterinschool.nl" class="underline text-secondary">Femme@theaterinschool.nl</a>
+            </div>
+            <div>
+              <p class="text-primaryBlack text-md">Administratie:</p>
+              <a href="mailto:administratie@theaterinschool.nl"
+                class="underline text-secondary">administratie@theaterinschool.nl</a>
+            </div>
           </div>
-          <div>
-            <p class="text-textgray">Administratie:</p>
-            <a href="mailto:administratie@theaterinschool.nl"
-              class="underline text-secondary">administratie@theaterinschool.nl</a>
-          </div>
+          <br>
+          <p class="text-primaryBlack text-md w-3/4">Vul het onderstaande formulier in voor meer informatie en/of vragen over Theater in
+            School en we nemen zo
+            snel mogelijk contact met je op.</p>
         </div>
-        <br>
-        <p class="text-textgray">Vul het onderstaande formulier in voor meer informatie en/of vragen over Theater in
-          School en we nemen zo
-          snel mogelijk contact met je op.</p>
-      </div>
-      <div>
+        <div class="flex-col-3">
+          <img src="/assets/images/contact/google-map.jpg" alt="google map" class="h-[290px]"/>
+          <form action="" class="flex flex-col gap-3 mt-4">
+            <div class="flex flex-col gap-1">
+              <label class="text-primaryBlack font-bold" for="name">Name</label>
+              <input type="text" id="name" name="name" class="md:w-80 w-full h-8 rounded-lg border border-secondary p-1" />
+            </div>
 
-      </div>
-      <div>
-        <img src="/assets/images/contact/google-map.jpg" alt="google map" />
-        <form action="" class="flex flex-col gap-4">
-          <div class="flex flex-col gap-1">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" class="w-80 h-8 rounded-lg border border-secondary p-1" />
-          </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-primaryBlack font-bold" for="email">Email</label>
+              <input type="email" id="email" name="email" class="md:w-80 w-full  h-8 rounded-lg border border-secondary p-1" />
+            </div>
 
-          <div class="flex flex-col gap-1">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" class="w-80 h-8 rounded-lg border border-secondary p-1" />
-          </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-primaryBlack font-bold" for="phone">Telefoonnummer</label>
+              <input type="tel" id="phone" name="phone" class="md:w-80 w-full  h-8 rounded-lg border border-secondary p-1" />
+            </div>
 
-          <div class="flex flex-col gap-1">
-            <label for="phone">Telefoonnummer</label>
-            <input type="tel" id="phone" name="phone" class="w-80 h-8 rounded-lg border border-secondary p-1" />
-          </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-primaryBlack font-bold" for="organization">Organisatie</label>
+              <input type="text" id="organization" name="organization"
+                class="md:w-80 w-full  h-8 rounded-lg border border-secondary p-1" />
+            </div>
 
-          <div class="flex flex-col gap-1">
-            <label for="organization">Organisatie</label>
-            <input type="text" id="organization" name="organization"
-              class="w-80 h-8 rounded-lg border border-secondary p-1" />
-          </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-primaryBlack font-bold" for="newsletter">Nieuwsbrief?</label>
+                <div class="flex items-center gap-2 pb-2">
+                      <label class="flex items-center cursor-pointer relative">
+                          <input type="checkbox"  class="peer h-6 w-6 cursor-pointer transition-all appearance-none  shadow hover:shadow-md border border-primaryBlack checked:bg-secondary checked:border-secondary" id="check1" />
+                          <span class="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                          </svg>
+                          </span>
+                      </label>
+                  </div>
+            </div>
 
-          <div class="flex flex-col gap-1">
-            <label for="newsletter">Nieuwsbrief?</label>
-            <input type="checkbox" id="newsletter" name="newsletter" />
-          </div>
+            <div class="flex flex-col gap-1 lg:mb-10 mb-4">
+              <label class="text-primaryBlack font-bold mb-4" for="message">Opmerking</label>
+              <textarea name="message" id="message" cols="30" rows="10"
+                class="w-full rounded-lg border border-secondary p-1"></textarea>
+            </div>
 
-          <div class="flex flex-col gap-1">
-            <label for="message">Opmerking</label>
-            <textarea name="message" id="message" cols="30" rows="10"
-              class="w-80 rounded-lg border border-secondary p-1"></textarea>
-          </div>
-
-          <button class="px-3 py-1 bg-secondary text-white rounded-custom text-lg font-bold m-auto block">Optie
-            Verstuur</button>
-        </form>
-      </div>
+            <button class="px-16 py-1 bg-secondary text-white rounded-custom text-lg font-bold block ml-auto">Verstuur</button>
+          </form>
+        </div>
     </div>
   </section>
 
@@ -194,7 +258,7 @@
       <div>
         <div class="relative">
           <h1
-            class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap font-inter">
+            class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
             THEATER <br>IN SCHOOL
           </h1>
         </div>

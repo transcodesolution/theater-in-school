@@ -10,7 +10,7 @@ tailwind.config = {
         sky: "#32B2BD",
         blue: "#3380C2",
         textgray: "#474143",
-        bluegray: "#3380C21A"
+        blueGray: "#3380C21A",
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

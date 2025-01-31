@@ -1,6 +1,15 @@
 /* Custom styles */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: Cotton-Regular;
+  src: url(/assets/fonts/CottonCandies-eZpvm.ttf);
+}
+
+:root{
+  --Cotton-Regular: Cotton-Regular;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -10,20 +19,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles */
-:focus {
-  outline: 2px solid #3498db;
-  outline-offset: 2px;
+.logo{
+  font-family: var(--Cotton-Regular);
+  font-weight: 700;
 }
 
+
+/* Focus styles */
+/* :focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+} */
+
 /* Button hover effects */
-button {
+/* button {
   transition: all 0.2s ease-in-out;
 }
 
 button:hover {
   transform: translateY(-1px);
-}
+} */
 
 /* Image hover effects */
 /* img {
