@@ -26,13 +26,13 @@ button:hover {
 }
 
 /* Image hover effects */
-img {
+/* img {
   transition: transform 0.3s ease-in-out;
-}
+} */
 
-img:hover {
+/* img:hover {
   transform: scale(1.02);
-}
+} */
 
 /* Link hover animations */
 a {
@@ -48,6 +48,11 @@ a {
   transform: translateY(-2px);
 }
 
+.md-container{
+  max-width: 850px;
+  margin: auto;
+  padding-inline:1rem ;
+}
 /* Media query for responsive design (mobile or small screens) */
 @media (max-width: 768px) {
   .sidebar {

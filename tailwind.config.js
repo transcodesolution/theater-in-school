@@ -19,6 +19,14 @@ tailwind.config = {
       borderRadius: {
         'custom': '10px',
       },
+      container: {
+        center: true,
+        padding: '1rem',
+        screens: {
+          lg: '1285px',
+          xl: '1285px',
+        },
+      },
     },
   },
   plugins: [],
