@@ -75,62 +75,46 @@ document.addEventListener("DOMContentLoaded", function () {
         { button: "doelgroepToggle", menu: "doelgroepMenu" }
     ];
 
-    let activeDropdown = null; // Track the currently active dropdown
-
     dropdowns.forEach(({ button, menu }) => {
         const btn = document.getElementById(button);
         const dropdown = document.getElementById(menu);
 
         function showDropdown() {
-            closeAllDropdowns(); // Close any open dropdown before opening a new one
             dropdown.classList.remove("hidden");
-            btn.classList.add("bg-white", "text-black", "rounded-t-lg");
-            activeDropdown = { btn, dropdown }; // Track the active dropdown
+            btn.classList.add("bg-white", "text-black");
         }
 
         function hideDropdown() {
             dropdown.classList.add("hidden");
-            btn.classList.remove("bg-white", "text-black", "rounded-t-lg");
-            activeDropdown = null; // Reset active dropdown
+            btn.classList.remove("bg-white", "text-black");
         }
 
-        // Click to toggle dropdown
-        btn.addEventListener("click", function (event) {
-            event.stopPropagation();
-            if (dropdown.classList.contains("hidden")) {
-                showDropdown();
-            } else {
-                hideDropdown();
-            }
-        });
-
-        // Hover to open dropdown
+        // Show dropdown on mouse enter
         btn.addEventListener("mouseenter", showDropdown);
         dropdown.addEventListener("mouseenter", showDropdown);
 
-        // Close dropdown on mouse leave (only if not clicked)
-        btn.addEventListener("mouseleave", () => {
-            if (!activeDropdown || activeDropdown.btn !== btn) hideDropdown();
-        });
-        dropdown.addEventListener("mouseleave", () => {
-            if (!activeDropdown || activeDropdown.btn !== btn) hideDropdown();
-        });
+        // Hide dropdown on mouse leave
+        btn.addEventListener("mouseleave", hideDropdown);
+        dropdown.addEventListener("mouseleave", hideDropdown);
     });
+});
 
-    // Close all dropdowns when clicking outside
-    document.addEventListener("click", function (event) {
-        if (activeDropdown && !activeDropdown.btn.contains(event.target) && !activeDropdown.dropdown.contains(event.target)) {
-            closeAllDropdowns();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navItems = document.querySelectorAll('.nav-item a');
+
+    // Get the current URL path
+    const currentPath = window.location.pathname;
+
+    navItems.forEach(item => {
+        // Extract the href attribute
+        const itemPath = item.getAttribute('href');
+
+        // Compare the href with the current path
+        if (itemPath === currentPath) {
+            item.classList.add('bg-gray-200');
+        } else {
+            item.classList.remove('bg-gray-200');
         }
     });
-
-    function closeAllDropdowns() {
-        dropdowns.forEach(({ button, menu }) => {
-            const btn = document.getElementById(button);
-            const dropdown = document.getElementById(menu);
-            dropdown.classList.add("hidden");
-            btn.classList.remove("bg-white", "text-black", "rounded-t-lg");
-        });
-        activeDropdown = null;
-    }
 });

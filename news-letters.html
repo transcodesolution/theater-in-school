@@ -14,10 +14,10 @@
   <!-- Top Bar -->
     <div class="bg-secondary text-white py-2 hidden md:block">
         <div class="container mx-auto px-4 flex justify-end space-x-4">
-            <a href="#over" class="hover:text-gray-200 text-xl font-sans font-normal">over</a>
+           <a href="/index.html" class="hover:text-gray-200 text-xl font-sans font-normal">over</a>
             <a href="/news-letters.html" class="hover:text-gray-200 text-xl font-sans font-normal">nieuws</a>
             <a href="/vacancies.html" class="hover:text-gray-200 text-xl font-sans font-normal">vacatures</a>
-            <a href="#erfgoed" class="hover:text-gray-200 text-xl font-sans font-normal">erfgoed</a>
+            <a href="/employees.html" class="hover:text-gray-200 text-xl font-sans font-normal">erfgoed</a>
             <a href="/contact.html" class="hover:text-gray-200 text-xl font-sans font-normal">contact</a>
         </div>
     </div>
@@ -28,12 +28,12 @@
             <button id="close-menu" class="text-secondary text-xl font-bold float-right">✕</button>
             <ul class="mt-10 space-y-4">
                 <li><a href="/index.html" class="font-bold text-primaryBlack font-sans text-lg">Home</a></li>
-                <li><a href="#doelgroep" class="font-bold text-primaryBlack font-sans text-lg">Doelgroep</a></li>
-                <li><a href="#aanbod" class="font-bold text-primaryBlack font-sans text-lg">Aanbod</a></li>
-                <li><a href="#over" class="text-primaryBlack font-sans mt-4">Over</a></li>
-              <li><a href="/news-letters.html" class="hover:text-gray-200 text-xl font-sans font-normal">nieuws</a></li>
+                <li><a href="/employees.html" class="font-bold text-primaryBlack font-sans text-lg">Doelgroep</a></li>
+                <li><a href="/news-detail.html" class="font-bold text-primaryBlack font-sans text-lg">Aanbod</a></li>
+                <li><a href="/vacancies.html" class="text-primaryBlack font-sans mt-4">Over</a></li>
+                <li><a href="/news-letters.html" class="hover:text-gray-200 text-xl font-sans font-normal">nieuws</a></li>
                 <li><a href="/vacancies.html" class="text-primaryBlack font-sans">Vacatures</a></li>
-                <li><a href="#erfgoed" class="text-primaryBlack font-sans">Erfgoed</a></li>
+                <li><a href="/employees.html" class="text-primaryBlack font-sans">Erfgoed</a></li>
                 <li><a href="/contact.html" class="text-primaryBlack font-sans">Contact</a></li>
             </ul>
         </div>
@@ -45,7 +45,9 @@
             <div class="flex items-center">
                 <div class="relative">
                     <h1 class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
-                        THEATER <br>IN SCHOOL
+                        <a href="/index.html">
+                            THEATER <br>IN SCHOOL   
+                        </a>
                     </h1>
                 </div>
             </div>
@@ -57,44 +59,44 @@
                     </button>
 
                     <!-- Aanbod Dropdown Menu -->
-                    <div id="aanbodMenu" class="absolute left-0 w-max bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden p-4">
-                        <a href=/theater-list.html class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                                <img src="/assets/images/icons/theater.png" alt="icon"> 
+                     <div id="aanbodMenu" class="absolute left-0 w-max bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden p-4 nav-item">
+                                <a href=/theater-list.html class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                        <img src="/assets/images/icons/theater.png" alt="icon"> 
+                                    </div>
+                                    Theater
+                                </a>
+                                <a href="/index.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                        <img src="/assets/images/icons/lecture.png" alt="icon">
+                                    </div>
+                                   Gastles
+                                </a>
+                                <a href="/employees.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                      <img src="/assets/images/icons/workshop.png" alt="icon"> 
+                                    </div>
+                                    Workshops
+                                </a>
+                                <a href="/news-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                       <img src="/assets/images/icons/music.png" alt="icon">
+                                    </div>
+                                     Muziek
+                                </a>
+                                <a href="/theater-list.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                        <img src="/assets/images/icons/film.png" alt="icon">
+                                    </div>
+                                    Film & Online
+                                </a>
+                                <a href="/theater-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
+                                    <div class="w-[35px]">
+                                       <img src="/assets/images/icons/dance.png" alt="icon">
+                                    </div>
+                                     Dans
+                                </a>
                             </div>
-                            Theater
-                        </a>
-                        <a href="#gastles" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                                <img src="/assets/images/icons/lecture.png" alt="icon">
-                            </div>
-                            Gastles
-                        </a>
-                        <a href="#workshops" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                              <img src="/assets/images/icons/workshop.png" alt="icon"> 
-                            </div>
-                            Workshops
-                        </a>
-                        <a href="#muziek" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                                <img src="/assets/images/icons/music.png" alt="icon">
-                            </div>
-                              Muziek
-                        </a>
-                        <a href="#film" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                                <img src="/assets/images/icons/film.png" alt="icon">
-                            </div>
-                            Film & Online
-                        </a>
-                        <a href="#dans" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4">
-                            <div class="w-[35px]">
-                                <img src="/assets/images/icons/dance.png" alt="icon">
-                            </div>
-                              Dans
-                        </a>
-                    </div>
                 </div>
 
               <!-- Doelgroep Dropdown -->
@@ -104,13 +106,13 @@
                   </button>
 
                   <!-- Doelgroep Dropdown Menu -->
-                  <div id="doelgroepMenu" class="absolute left-0 md:w-56 w-48  p-4 bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden">
-                      <a href="#po" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Po</a>
-                      <a href="#vo" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Vo</a>
-                      <a href="#mbo" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Mbo</a>
-                      <a href="#tto" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Tto</a>
-                      <a href="#ouders" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Ouders</a>
-                      <a href="#docenten" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Docenten</a>
+                  <div id="doelgroepMenu" class="absolute left-0 md:w-56 w-48  p-4 bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden nav-item">
+                       <a href="/employees.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Po</a>
+                                <a href="/index.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Vo</a>
+                                <a href="/news-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Mbo</a>
+                                <a href="/news-letters.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Tto</a>
+                                <a href="/theater-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Ouders</a>
+                                <a href="/vacancies.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200">Docenten</a>
                   </div>
               </div>
           </div>
@@ -144,7 +146,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M9 18l6-6-6-6"/>
       </svg>
-      <a href="/employees.html" class="text-secondary font-sans">medewerkers</a>
+      <a href="#" class="text-secondary font-sans">Nieuws</a>
     </div>
     <div class="grid  grid-cols-1 md:grid-cols-4 gap-4">
         <div id="sidebar" class="md:col-span-1 hidden md:block sidebar md:p-0 p-8">
@@ -260,7 +262,9 @@
             <div>
                 <div class="relative">
                     <h1 class="text-xl md:text-4xl font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
-                        THEATER <br>IN SCHOOL
+                        <a href="/index.html">
+                            THEATER <br>IN SCHOOL   
+                        </a>
                     </h1>
                 </div >
                 <div class="md:w-36  pt-7">
