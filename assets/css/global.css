@@ -64,12 +64,31 @@ a {
   transform: translateY(-2px);
 }
 
-.md-container{
-  max-width: 850px;
-  margin: auto;
-  padding-inline:1rem ;
-}
+
+
 /* Media query for responsive design (mobile or small screens) */
+
+@media (min-width: 768px) {
+    .md-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1285px) {
+    .md-container {
+        max-width: 990px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .md-container{
+    max-width: 942px;
+    margin: auto;
+    padding-inline:1rem ;
+  }
+}
+
+
 @media (max-width: 768px) {
   .sidebar {
     position: fixed;
