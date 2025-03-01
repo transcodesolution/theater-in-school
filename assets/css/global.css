@@ -70,19 +70,21 @@ a {
 
 @media (min-width: 768px) {
     .md-container {
-        max-width: 768px;
+        max-width: 898px;
+        margin: auto;
     }
 }
 
 @media (min-width: 1285px) {
-    .md-container {
-        max-width: 990px;
+   .md-container {
+        max-width: 907px;
+        margin: auto;
     }
 }
 
 @media (min-width: 1536px) {
     .md-container{
-    max-width: 942px;
+    max-width: 940px;
     margin: auto;
     padding-inline:1rem ;
   }
@@ -105,7 +107,6 @@ a {
         transform: translateX(100%); /* Initially hidden */
     }
 
-    /* When 'sidebar-open' class is added, move sidebar into view */
     .sidebar.sidebar-open {
         transform: translateX(0);
     }
