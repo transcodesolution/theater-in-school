@@ -11,6 +11,7 @@ tailwind.config = {
         blue: "#3380C2",
         textgray: "#474143",
         blueGray: "#3380C21A",
+        lightBlue: "#F5FCFF"
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

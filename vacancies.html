@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vacancies</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/global.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.typekit.net/pah6cxt.css">
 </head>
@@ -42,27 +42,27 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="bg-primary md:py-4 py-2">
-    <div class="container mx-auto px-4 flex item-center md:items-end w-full">
+  <nav class="bg-primary md:py-4 py-2 px-4">
+    <div class="container mx-auto flex item-center md:items-end w-full p-0">
       <div class="flex items-center">
         <div class="relative">
           <h1
-            class="text-xl  md:text-[46px] md:leading-9 font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
-              <a href="/index.html">
-                THEATER <br>IN SCHOOL   
-              </a> 
+            class="text-xl leading-6 md:text-[46px] md:leading-9 font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
+            <a href="/index.html">
+              THEATER <br>IN SCHOOL   
+            </a>
           </h1>
         </div>
       </div>
       <div class="flex items-center justify-between w-full">
-            <div class="md:space-x-4 flex">
-                        <div class="relative">
-                            <button id="aanbodToggle" class="text-white md:text-3xl text-xl font-bold md:px-4 px-2 py-2 transition">
-                                Aanbod
-                            </button>
+             <div class="md:space-x-4 flex">
+              <div class="relative">
+                  <button id="aanbodToggle" class="text-white md:text-3xl text-xl font-bold md:px-4 px-2 py-2 transition">
+                      Aanbod
+                  </button>
 
-                            <!-- Aanbod Dropdown Menu -->
-                            <div id="aanbodMenu" class="absolute left-0 w-max bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden p-4 nav-item">
+                  <!-- Aanbod Dropdown Menu -->
+                  <div id="aanbodMenu" class="absolute left-0 w-max bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden p-4 nav-item">
                                 <a href=/theater-list.html class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 gap-4 mb-1">
                                     <div class="w-[35px]">
                                         <img src="./assets/images/icons/theater.png" alt="icon"> 
@@ -100,27 +100,27 @@
                                      Dans
                                 </a>
                             </div>
-                        </div>
+              </div>
 
-                        <!-- Doelgroep Dropdown -->
-                        <div class="relative">
-                            <button id="doelgroepToggle" class="text-white md:text-3xl text-xl font-bold md:px-4 px-2 py-2 transition">
-                                Doelgroep
-                            </button>
+              <!-- Doelgroep Dropdown -->
+              <div class="relative">
+                  <button id="doelgroepToggle" class="text-white md:text-3xl text-xl font-bold md:px-4 px-2 py-2 transition">
+                      Doelgroep
+                  </button>
 
-                            <!-- Doelgroep Dropdown Menu -->
-                            <div id="doelgroepMenu" class="absolute left-0 md:w-56 w-48  p-4 bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden nav-item">
-                                <a href="/employees.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Po</a>
-                                <a href="/index.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Vo</a>
-                                <a href="/news-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Mbo</a>
-                                <a href="/news-letters.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Tto</a>
-                                <a href="/theater-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Ouders</a>
-                                <a href="/vacancies.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Docenten</a>
-                            </div>
-                        </div>
-            </div>
+                  <!-- Doelgroep Dropdown Menu -->
+                  <div id="doelgroepMenu" class="absolute left-0 md:w-56 w-48  p-4 bg-white rounded-b-lg rounded-tr-lg shadow-lg hidden nav-item">
+                      <a href="/employees.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Po</a>
+                      <a href="/index.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Vo</a>
+                      <a href="/news-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Mbo</a>
+                      <a href="/news-letters.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Tto</a>
+                      <a href="/theater-detail.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Ouders</a>
+                      <a href="/vacancies.html" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-200 mb-1">Docenten</a>
+                  </div>
+              </div>
+             </div>
         <div class="relative hidden md:block">
-          <input type="text" placeholder="Zoeken..."
+          <input type="text"
             class="pl-3 pr-10 py-2 rounded-md  focus:outline-none focus:border-yellow-100 bg-yellow-100">
           <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-primary w-5 h-5"
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -137,7 +137,7 @@
   </nav>
 
   <!-- Main Content -->
-  <section class="container mx-auto px-4 py-4">
+  <section class="container mx-auto px-4 pt-4">
     <div class="flex gap-2 items-center">
       <a href="/index.html" class="text-secondary font-sans">Home</a>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -148,54 +148,56 @@
     </div>
   </section>
 
-  <section class="md-container mx-auto px-4 py-4">
-    <div class="flex flex-col gap-6 pb-4">
-      <h1 class="text-4xl font-bold text-primaryBlack">Dit is een hele mooi baan voor jou</h1>
-      <p class="text-textgray">Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater?
-        Boek nu een
-        improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij
-        leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een
-        interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.</p>
-
-      <p class="text-textgray">Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze
-        workshops, gericht op zowel
-        beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken,
-        out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende
-        omgeving.</p>
-
-      <p class="text-textgray">Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een
-        speciaal
-        'train-de-trainer'-pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van
-        improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en
-        probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!</p>
-
-      <p class="text-textgray">Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren
-        en boek onze
-        voorstelling inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw
-        school wordt een bron van inspiratie voor iedereen.</p>
-
-      <p class="text-textgray">Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!
-      </p>
-      <p class="text-textgray">Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater? Boek nu een
-        improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij
-        leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een
-        interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.</p>
-
-      <p class="text-textgray">Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze workshops, gericht op zowel
-        beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken,
-        out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende
-        omgeving.</p>
-
-      <p class="text-textgray">Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een speciaal
-        'train-de-trainer'-pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van
-        improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en
-        probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!</p>
-
-      <p class="text-textgray">Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren en boek onze
-        voorstelling inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw
-        school wordt een bron van inspiratie voor iedereen.</p>
-
-      <p class="text-textgray">Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!</p>
+  <section class="px-4 py-4">
+    <div class="md-container mx-auto ">
+      <div class="flex flex-col gap-6 pb-4">
+        <h1 class="text-xl md:text-4xl font-bold text-primaryBlack">Dit is een hele mooi baan voor jou</h1>
+        <p class="text-textgray">Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater?
+          Boek nu een
+          improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij
+          leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een
+          interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.</p>
+  
+        <p class="text-textgray">Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze
+          workshops, gericht op zowel
+          beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken,
+          out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende
+          omgeving.</p>
+  
+        <p class="text-textgray">Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een
+          speciaal
+          'train-de-trainer'-pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van
+          improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en
+          probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!</p>
+  
+        <p class="text-textgray">Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren
+          en boek onze
+          voorstelling inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw
+          school wordt een bron van inspiratie voor iedereen.</p>
+  
+        <p class="text-textgray">Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!
+        </p>
+        <p class="text-textgray">Zoekt u een creatieve, inspirerende manier om uw leerlingen te betrekken bij theater? Boek nu een
+          improvisatietheater voorstelling voor uw school! Improvisatietheater biedt een unieke ervaring waarbij
+          leerlingen en docenten samen lachen, leren en meedoen. Onze getalenteerde acteurs nemen het publiek mee in een
+          interactieve voorstelling, waarbij elke show anders is door de spontane inbreng van de leerlingen zelf.</p>
+  
+        <p class="text-textgray">Naast de voorstelling bieden we de mogelijkheid om workshops bij te boeken. Deze workshops, gericht op zowel
+          beginners als gevorderden, laten leerlingen de kracht van improvisatie ontdekken. Ze leren samenwerken,
+          out-of-the-box denken en hun creativiteit vrij te laten stromen – allemaal in een veilige en ondersteunende
+          omgeving.</p>
+  
+        <p class="text-textgray">Bent u geïnteresseerd in een diepgaandere aanpak? Tijdens ouderavonden kunnen wij ook een speciaal
+          'train-de-trainer'-pakket aanbieden voor ouders en docenten. Dit pakket geeft handvatten om de technieken van
+          improvisatie theater in te zetten in de klas of thuis. Het helpt om communicatie, samenwerking en
+          probleemoplossende vaardigheden te verbeteren – en dat allemaal op een speelse manier!</p>
+  
+        <p class="text-textgray">Wacht niet langer! Geef uw leerlingen de kans om theater te ervaren zoals nooit tevoren en boek onze
+          voorstelling inclusief workshops en train-de-trainer pakket. Creativiteit en plezier staan centraal, en uw
+          school wordt een bron van inspiratie voor iedereen.</p>
+  
+        <p class="text-textgray">Neem vandaag nog contact op en laat de magie van improvisatie uw school transformeren!</p>
+      </div>
     </div>
   </section>
 
@@ -205,18 +207,18 @@
   <!-- Newsletter Section -->
   <section class="bg-blueGray py-8">
     <div class="container mx-auto md:px-7 px-4">
-      <h2 class="text-2xl md:text-4xl text-primaryBlack font-bold mb-7">
+      <h2 class="text-xl md:text-4xl text-primaryBlack font-bold mb-7">
         Altijd op de hoogte van het laatste Theater in School nieuws
       </h2>
       <div class="lg:w-1/3">
-        <p class="text-primaryBlack mb-8 text-lg md:text-xl text-primaryBlack">
+        <p class="text-primaryBlack mb-8 text-base md:text-xl text-primaryBlack">
           Ontvangen iedere maand onze nieuwsbrief met daarin een
           heleboel nieuws
         </p>
         <div class="flex">
-          <input type="email" placeholder="E-mailadres"
-            class="flex-1 px-4 py-2 rounded-tl-lg rounded-br-lg focus:outline-none focus:border-secondary">
-          <button class="bg-secondary rounded-bl-lg rounded-tr-lg text-white px-4 md:px-6 py-2 rounded-r-sm hover:bg-[#2980b9]">
+          <input type="email"
+            class="flex-1 px-4 py-2 bg-lightBlue rounded-l-lg md:rounded-l-none md:rounded-tl-lg md:rounded-br-lg focus:outline-none focus:border-secondary">
+          <button class="bg-secondary  text-white px-4 md:px-6 py-2 rounded-r-lg md:rounded-r-none md:rounded-bl-lg md:rounded-tr-lg">
             Inschrijven
           </button>
         </div>
@@ -230,7 +232,7 @@
       <div>
         <div class="relative">
           <h1
-            class="text-xl  md:text-[46px] md:leading-9 font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
+            class="text-xl leading-6 md:text-[46px] md:leading-9 font-normal text-white transform rotate-[-8deg] md:rotate-[-12deg] whitespace-nowrap logo">
             <a href="/index.html">
                 THEATER <br>IN SCHOOL   
               </a>
@@ -249,7 +251,7 @@
       </div>
 
       <div>
-        <h4 class="font-bold mb-8 text-xl font-sans">Podiumkunsten</h4>
+        <h4 class="font-bold mb-8 text-base md:text-xl font-sans">Podiumkunsten</h4>
         <ul class="font-sans">
           <li><a href="/theater-list.html">Theater</a></li>
           <li>College</li>
@@ -261,13 +263,13 @@
       </div>
 
       <div>
-        <h4 class="font-bold mb-8 text-xl font-sans">Misschien interessant</h4>
+        <h4 class="font-bold mb-8 text-base md:text-xl font-sans">Misschien interessant</h4>
         <ul class="font-sans">
           <li>Over ons</li>
           <li>Donateur worden</li>
           <li><a href="/news-letters.html">Nieuws</a></li>
         </ul>
-        <h4 class="font-bold mb-8 text-xl font-sans mt-8">Dit moet</h4>
+        <h4 class="font-bold mb-8 text-base md:text-xl font-sans mt-8">Dit moet</h4>
         <ul class="font-sans">
           <li>Cookieverklaring</li>
           <li>Privacy statement</li>
@@ -276,7 +278,7 @@
       </div>
 
       <div>
-        <h4 class="font-bold mb-8 text-xl font-sans">Hier werken we</h4>
+        <h4 class="font-bold mb-8 text-base md:text-xl font-sans">Hier werken we</h4>
         <address class="not-italic">
           <p>Hendrik Figeeweg 3G</p>
           <p>2031 BJ</p>
