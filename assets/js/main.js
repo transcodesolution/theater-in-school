@@ -55,18 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
-
-
 // Open Sidebar and add 'sidebar-open' class when filterButton is clicked
 document.getElementById('filterButton')?.addEventListener('click', function () {
-    document.getElementById('sidebar').classList.add('sidebar-open');
-    document.getElementById('sidebar').classList.remove('hidden');
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.add('sidebar-open');
+    sidebar.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
 });
 
 // Close Sidebar and remove 'sidebar-open' class when closeSidebar is clicked
 document.getElementById('closeSidebar')?.addEventListener('click', function () {
-    document.getElementById('sidebar').classList.remove('sidebar-open');
-    document.getElementById('sidebar').classList.add('hidden');
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.remove('sidebar-open');
+    sidebar.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
 });
 
 document.addEventListener("DOMContentLoaded", function () {
