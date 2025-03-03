@@ -70,26 +70,10 @@ a {
 
 @media (min-width: 768px) {
     .md-container {
-        max-width: 898px;
+        max-width: 845px;
         margin: auto;
     }
 }
-
-@media (min-width: 1285px) {
-   .md-container {
-        max-width: 907px;
-        margin: auto;
-    }
-}
-
-@media (min-width: 1536px) {
-    .md-container{
-    max-width: 940px;
-    margin: auto;
-    padding-inline:1rem ;
-  }
-}
-
 
 @media (max-width: 768px) {
   .sidebar {

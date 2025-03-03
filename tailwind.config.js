@@ -27,6 +27,9 @@ tailwind.config = {
           xl: '1285px',
         },
       },
+      fontSize: {
+        '4xl': ["2.5rem", { lineHeight: "normal" }],
+      },
     },
   },
   plugins: [],
